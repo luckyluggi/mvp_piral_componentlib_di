@@ -1,0 +1,12 @@
+﻿@namespace component_lib
+@inject IConsoleMessageService consoleMessageService
+
+<button class="my-button" @onclick="ShowPrompt">
+    Log message to console
+</button>
+
+@code{
+    public void ShowPrompt(){
+        consoleMessageService.LogMessageToConsole("Message from ComponentLib Button");
+    }
+}

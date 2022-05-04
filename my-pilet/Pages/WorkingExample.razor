@@ -1,0 +1,12 @@
+﻿@page "/working-example"
+@inject IConsoleMessageService consoleMessageService
+
+<h1>Working Example</h1>
+<p>This works because IConsoleMessageService can be injected in my-pilet\Pages\WorkingExample.razor</p>
+<button class="btn btn-primary" @onclick="ShowPrompt">Log message to console</button><br><br>
+
+@code {
+    public void ShowPrompt(){
+        consoleMessageService.LogMessageToConsole("Message from Pilet Button");
+    }
+}

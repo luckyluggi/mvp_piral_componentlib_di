@@ -1,0 +1,7 @@
+﻿.my-button {
+    border: 2px dashed red;
+    padding: 10px 20px;
+    background: green;
+    color:white;
+    font-size:16px;
+}
