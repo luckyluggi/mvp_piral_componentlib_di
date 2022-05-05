@@ -17,4 +17,4 @@ So it seems that components from the Razor Class Library cannot inject dependenc
 
 ## Things i already tried
 - I already tried registring the Services in `ConfigureServices` and `ConfigureShared`  but this does not change anything
-- I already tried adding a reference to Piral.Utils in the component-lib and adding the `@attribute [PiralComponent]` Attribute to the MyButton component, but this did not change anything
+- I already tried adding a reference to Piral.Utils in the component-lib and adding the `@attribute [PiralComponent]` Attribute to the MyButton component, but this did not change anything. (this can b seen in the branch `try_with_piral_attribute`)
