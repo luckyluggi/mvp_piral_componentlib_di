@@ -10,13 +10,12 @@ public class Module
 
     public static void ConfigureServices(IServiceCollection services)
     {
-        // configure dependency injection here
-        services.AddComponentLibServices();
+        // configure (local) dependency injection here
     }
     
     public static void ConfigureShared(IServiceCollection services)
     {
-        // configure dependency injection here
-        // services.AddComponentLibServices();
+        // configure (globally shared) dependency injection here
+        services.AddComponentLibServices();
     }
 }  
